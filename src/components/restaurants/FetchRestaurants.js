@@ -1,9 +1,19 @@
 import React from 'react'; 
 import SearchBar from './SearchBar';
-import { requestOptions } from '../../apis/config'
+// import { requestOptions } from '../../apis/config'
 import { connect } from 'react-redux';
 import Restaurant from './Restaurant';
 import GoogleMaps from '../../apis/GoogleMaps';
+
+const myHeaders = new Headers();
+myHeaders.append("Authorization", process.env.API_KEY);
+myHeaders.append("Cookie", process.env.COOKIE);
+
+const requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
 
 class FetchRestaurants extends React.Component{
   constructor() {
