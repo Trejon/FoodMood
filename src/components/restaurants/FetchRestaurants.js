@@ -56,7 +56,7 @@ class FetchRestaurants extends React.Component{
         <h5>Search Restaurants Near You</h5>
         <SearchBar search={this.fetchYelpApi} />
         <Restaurant restaurants={this.state.restaurants} /><br/>
-        <GoogleMaps restaurants={this.state.restaurants} />
+        {/* <GoogleMaps restaurants={this.state.restaurants} /> */}
       </div>
     )
   }
