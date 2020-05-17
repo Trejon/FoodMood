@@ -6,8 +6,8 @@ import Restaurant from './Restaurant';
 import GoogleMaps from '../../apis/GoogleMaps';
 
 const myHeaders = new Headers();
-myHeaders.append("Authorization", process.env.API_KEY);
-myHeaders.append("Cookie", process.env.COOKIE);
+myHeaders.append("Authorization", ENV['API_KEY']);
+myHeaders.append("Cookie", ENV.COOKIE);
 
 const requestOptions = {
   method: 'GET',
