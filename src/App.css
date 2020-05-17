@@ -1,0 +1,78 @@
+.ui.item.logout {
+  font-size: 10px;
+  position: absolute;
+  right: -50px;
+  height: 75px;
+} 
+
+.ui.item {
+  position: relative;
+}
+
+.logo {
+  color: rgba(250, 239, 135, 0.967);
+  font-size: 30px;
+}
+
+.item.loggedin {
+  font-size: 10px;
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 100;
+}
+
+.ui.menu {
+  font-size: 1rem;
+  padding-top: 0%;
+  background-color: #8FBC8F;
+}
+
+.ui.pointer.menu {
+  justify-content: space-between;
+}
+
+.nav {
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+
+.yelppicture {
+  height: 300px;
+}
+
+h4:last-child{
+  color: aliceblue;
+}
+
+.active h4:last-child{
+  color: black;
+}
+
+.logo {
+  position: fixed;
+  
+}
+
+.cluster-marker {
+  color: #fff; 
+  background: #1978c8;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-marker {
+  background: none;
+  border: none;
+  position: absolute;
+
+}
+
+.restaurant-marker img {
+  width: 25px;
+}
+
