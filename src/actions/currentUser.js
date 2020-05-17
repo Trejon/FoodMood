@@ -36,7 +36,7 @@ export const getUserCoords = () => {
 
 export const login = credentials => {
   return dispatch => {
-    return fetch("https://thawing-gorge-41253.herokuapp.com/api/v1/login", {
+    return fetch("https://cors-anywhere.herokuapp.com/https://thawing-gorge-41253.herokuapp.com/api/v1/login", {
       credentials: "include",
       method: 'POST', 
       headers: {
@@ -64,7 +64,7 @@ export const logout = () => {
   return dispatch => {
     dispatch(clearCurrentUser())
     dispatch(clearLists())
-    return fetch('https://thawing-gorge-41253.herokuapp.com/api/v1/logout', {
+    return fetch('https://cors-anywhere.herokuapp.com/https://thawing-gorge-41253.herokuapp.com/api/v1/logout', {
       credentials: 'include', 
       method: 'DELETE'
     })
@@ -73,7 +73,7 @@ export const logout = () => {
 
 export const signup = credentials => {
   return dispatch => {
-    return fetch("https://thawing-gorge-41253.herokuapp.com/api/v1/signup", {
+    return fetch("https://cors-anywhere.herokuapp.com/https://thawing-gorge-41253.herokuapp.com/api/v1/signup", {
       credentials: "include",
       method: 'POST', 
       headers: {
@@ -99,7 +99,7 @@ export const signup = credentials => {
 
 export const getCurrentUser = () => {
   return dispatch => {
-    return fetch("https://thawing-gorge-41253.herokuapp.com/api/v1/get_current_user", {
+    return fetch("https://cors-anywhere.herokuapp.com/https://thawing-gorge-41253.herokuapp.com/api/v1/get_current_user", {
       credentials: "include",
       method: 'GET', 
       headers: {
