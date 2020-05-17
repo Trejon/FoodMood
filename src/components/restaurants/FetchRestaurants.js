@@ -35,11 +35,11 @@ class FetchRestaurants extends React.Component{
     .catch(error => console.log('error', error));
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      this.fetchYelpApi()
-    }
-  }
+  // componentDidUpdate(prevProps) {
+  //   if (this.props.location !== prevProps.location) {
+  //     this.fetchYelpApi()
+  //   }
+  // }
 
   render() {
     if(!this.state.restaurants) {
