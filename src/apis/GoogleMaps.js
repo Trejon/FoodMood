@@ -37,7 +37,7 @@ class GoogleMaps extends React.Component{
       return(
         <div style={{ height: "100vh", width: "100%", position: 'relative'}}>
           <GoogleMapReact 
-            bootstrapURLKeys={{ key: process.env.MAPS_KEY}}
+            // bootstrapURLKeys={{ key: process.env.MAPS_KEY}}
             defaultCenter={{lat, lng}}
             defaultZoom={11} 
             yesIWantToUseGoogleMapApiInternals
