@@ -40,7 +40,7 @@ export const updateListSuccess = list => {
 
  export const getMyLists = () => {
    return dispatch =>  {
-    return fetch("http://localhost:3001/api/v1/lists", {
+    return fetch("https://thawing-gorge-41253.herokuapp.com/api/v1/lists", {
       credentials: "include", 
       method: "GET", 
       headers: {
@@ -66,7 +66,7 @@ export const createList = listData => {
         description: listData.description, 
         user_id: listData.userId
     }
-    return fetch("http://localhost:3001/api/v1/lists", {
+    return fetch("https://thawing-gorge-41253.herokuapp.com/api/v1/lists", {
       credentials: 'include', 
       method: 'POST', 
       headers: {
@@ -94,7 +94,7 @@ export const updateList = listData => {
         name: listData.name, 
         description: listData.description
     }
-    return fetch(`http://localhost:3001//api/v1/lists/${listData.listId}`, {
+    return fetch(`https://thawing-gorge-41253.herokuapp.com/api/v1/lists/${listData.listId}`, {
       credentials: 'include', 
       method: "PATCH", 
       headers: {
@@ -119,7 +119,7 @@ export const updateList = listData => {
 
 export const deleteList = listId => {
   return dispatch => { 
-    return fetch(`http://localhost:3001/api/v1/lists/${listId}`, {
+    return fetch(`https://thawing-gorge-41253.herokuapp.com/api/v1/lists/${listId}`, {
       credentials: 'include', 
       method: "DELETE", 
       headers: {

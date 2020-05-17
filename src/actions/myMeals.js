@@ -40,7 +40,7 @@ export const updateMealSuccess = meal => {
 
  export const getMyMeals = () => {
    return dispatch =>  {
-    return fetch("http://localhost:3001/api/v1/meals", {
+    return fetch("https://thawing-gorge-41253.herokuapp.com/api/v1/meals", {
       credentials: "include", 
       method: "GET", 
       headers: {
@@ -71,7 +71,7 @@ export const createMeal = mealData => {
         user_id: mealData.userId, 
         list_id: mealData.listId
     }
-    return fetch("http://localhost:3001/api/v1/meals", {
+    return fetch("https://thawing-gorge-41253.herokuapp.com/api/v1/meals", {
       credentials: 'include', 
       method: 'POST', 
       headers: {
@@ -105,7 +105,7 @@ export const updateMeal = mealData => {
         url: mealData.url, 
         meal_date: mealData.meal_date,
     }
-    return fetch(`http://localhost:3001//api/v1/meals/${mealData.mealId}`, {
+    return fetch(`https://thawing-gorge-41253.herokuapp.com/api/v1/meals/${mealData.mealId}`, {
       credentials: 'include', 
       method: "PATCH", 
       headers: {
@@ -130,7 +130,7 @@ export const updateMeal = mealData => {
 
 export const deleteMeal = mealId => {
   return dispatch => { 
-    return fetch(`http://localhost:3001/api/v1/meals/${mealId}`, {
+    return fetch(`https://thawing-gorge-41253.herokuapp.com/api/v1/meals/${mealId}`, {
       credentials: 'include', 
       method: "DELETE", 
       headers: {
