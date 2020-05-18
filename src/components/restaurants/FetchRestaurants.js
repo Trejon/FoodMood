@@ -4,10 +4,11 @@ import SearchBar from './SearchBar';
 import { connect } from 'react-redux';
 import Restaurant from './Restaurant';
 import GoogleMaps from '../../apis/GoogleMaps';
+import dotenv from 'dotenv';
 
 const myHeaders = new Headers();
-myHeaders.append("Authorization", ENV['API_KEY']);
-myHeaders.append("Cookie", ENV.COOKIE);
+myHeaders.append("Authorization", "Bearer 7csztt9t_mV0qy-Xja17NIqffm25SXNRfheqdxofAZLASkmWJsj4OSLOePCcpGdFj-Q8tdxmFLuQnWHeVD51mQ61bzT34EsGLwBXZOJa3hbhHbtyhBsZh6ufmtKTXnYx");
+myHeaders.append("Cookie", "__cfduid=d21bcfcd3b5c8341593654a98645802fa1586752739");
 
 const requestOptions = {
   method: 'GET',
