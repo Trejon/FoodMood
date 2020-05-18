@@ -36,11 +36,11 @@ class FetchRestaurants extends React.Component{
     .catch(error => console.log('error', error));
   }
 
-  // componentDidUpdate(prevProps) {
-  //   if (this.props.location !== prevProps.location) {
-  //     this.fetchYelpApi()
-  //   }
-  // }
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      this.fetchYelpApi()
+    }
+  }
 
   render() {
     if(!this.state.restaurants) {
@@ -48,7 +48,7 @@ class FetchRestaurants extends React.Component{
         <div>
           <h5>Search Restaurants Near You</h5>
           <SearchBar search={this.fetchYelpApi} /><br/>
-          {/* <GoogleMaps restaurants={this.state.restaurants} /> */}
+          <GoogleMaps restaurants={this.state.restaurants} />
         </div>
       )
     } 
@@ -57,7 +57,7 @@ class FetchRestaurants extends React.Component{
         <h5>Search Restaurants Near You</h5>
         <SearchBar search={this.fetchYelpApi} />
         <Restaurant restaurants={this.state.restaurants} /><br/>
-        {/* <GoogleMaps restaurants={this.state.restaurants} /> */}
+        <GoogleMaps restaurants={this.state.restaurants} />
       </div>
     )
   }
