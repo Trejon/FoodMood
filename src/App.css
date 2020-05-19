@@ -22,10 +22,26 @@
   height: 100;
 }
 
+@media screen and (max-width: 880px) {
+  div.header.item.navitem h4, 
+  div.header.item.navitem a,
+  .ui.negative.button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  div.ui.teal.seven.item.menu button.toggle,
+  div.ui.teal.two.item.menu button.toggle {
+    display: none;
+  }
+}
+
 .ui.menu {
   font-size: 1rem;
   padding-top: 0%;
   background-color: #8FBC8F;
+  postion: relative;
 }
 
 .ui.pointer.menu {
