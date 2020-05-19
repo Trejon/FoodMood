@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Food-Mood-Frontend/index/static/css/main.584307b2.chunk.css",
+    "main.js": "/Food-Mood-Frontend/index/static/js/main.4dfce3f4.chunk.js",
+    "main.js.map": "/Food-Mood-Frontend/index/static/js/main.4dfce3f4.chunk.js.map",
+    "runtime-main.js": "/Food-Mood-Frontend/index/static/js/runtime-main.2ab0afb2.js",
+    "runtime-main.js.map": "/Food-Mood-Frontend/index/static/js/runtime-main.2ab0afb2.js.map",
+    "static/js/2.e5f33d92.chunk.js": "/Food-Mood-Frontend/index/static/js/2.e5f33d92.chunk.js",
+    "static/js/2.e5f33d92.chunk.js.map": "/Food-Mood-Frontend/index/static/js/2.e5f33d92.chunk.js.map",
+    "index.html": "/Food-Mood-Frontend/index/index.html",
+    "precache-manifest.37ac5f10bbf67d40e61c69aa384cb366.js": "/Food-Mood-Frontend/index/precache-manifest.37ac5f10bbf67d40e61c69aa384cb366.js",
+    "service-worker.js": "/Food-Mood-Frontend/index/service-worker.js",
+    "static/css/main.584307b2.chunk.css.map": "/Food-Mood-Frontend/index/static/css/main.584307b2.chunk.css.map",
+    "static/js/2.e5f33d92.chunk.js.LICENSE.txt": "/Food-Mood-Frontend/index/static/js/2.e5f33d92.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ab0afb2.js",
+    "static/js/2.e5f33d92.chunk.js",
+    "static/css/main.584307b2.chunk.css",
+    "static/js/main.4dfce3f4.chunk.js"
+  ]
+}
