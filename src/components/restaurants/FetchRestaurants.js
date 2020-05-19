@@ -6,9 +6,12 @@ import Restaurant from './Restaurant';
 import GoogleMaps from '../../apis/GoogleMaps';
 import dotenv from 'dotenv';
 
+const myHeaderAuth = process.env.MY_HEADER_AUTH
+const myHeaderCookie = process.env.MY_HEADER_COOKIE
+
 const myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer 7csztt9t_mV0qy-Xja17NIqffm25SXNRfheqdxofAZLASkmWJsj4OSLOePCcpGdFj-Q8tdxmFLuQnWHeVD51mQ61bzT34EsGLwBXZOJa3hbhHbtyhBsZh6ufmtKTXnYx");
-myHeaders.append("Cookie", "__cfduid=d21bcfcd3b5c8341593654a98645802fa1586752739");
+myHeaders.append("Authorization", myHeaderAuth);
+myHeaders.append("Cookie", myHeaderCookie);
 
 const requestOptions = {
   method: 'GET',
