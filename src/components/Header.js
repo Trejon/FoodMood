@@ -33,7 +33,7 @@ class Header extends React.Component {
       return(
         <div className="ui teal seven item menu">
 
-          <button onClick={this.handleMenuToggle} className="toggle"><i className="left tasks icon"></i></button>
+          <button onClick={this.handleMenuToggle} className="toggle"><i className="angle double down icon"></i></button>
 
           <div className="header item navitem">
             <NavLink style={{ color: 'rgb(250, 239, 135, 0.967)', 'fontSize': '25px', 'borderStyle': 'double'}} exact to="">FoodMood</NavLink>
@@ -86,11 +86,11 @@ class Header extends React.Component {
       )
     } else if (!this.props.currentUser && !this.state.isClicked) {
       return (
-        <div className="ui teal two item menu">
-          <button onClick={this.handleMenuToggle} className="toggle"><i className="left tasks icon"></i></button>
+        <div className="ui teal one item menu">
+          {/* <button onClick={this.handleMenuToggle} className="toggle"><i className="left tasks icon"></i></button> */}
 
           <div className="header">
-            <h1>Welcome to FoodMood, please <Link to="/login">Log In</Link> into your account or <Link to="/signup">Sign Up</Link></h1>
+            <h1>Welcome to FoodMood, please <Link to="/login">Login</Link> into your account or <Link to="/signup">Signup</Link></h1>
           </div>
             
           <div className="right menu">
@@ -103,18 +103,19 @@ class Header extends React.Component {
           
         </div>
       )
-    } else {
-      return (
-        <div className="ui grid">
-          <div className="four wide column">
-            <div className="ui vertical fluid tabular menu">
-              <div><h3><Link onClick={this.handleMenuToggle} to="/login">Log In</Link></h3></div>
-              <div><h3><Link onClick={this.handleMenuToggle} to="/signup">Sign Up</Link></h3></div>
-            </div>
-        </div>
-        </div>
-      )
-    }
+    } 
+    // else {
+    //   return (
+    //     <div className="ui grid">
+    //       <div className="four wide column">
+    //         <div className="ui vertical fluid tabular menu">
+    //           <div><h3><Link onClick={this.handleMenuToggle} to="/login">Log In</Link></h3></div>
+    //           <div><h3><Link onClick={this.handleMenuToggle} to="/signup">Sign Up</Link></h3></div>
+    //         </div>
+    //     </div>
+    //     </div>
+    //   )
+    // }
   }
 }
 

@@ -1,7 +1,7 @@
 .ui.item.logout {
   font-size: 10px;
   position: absolute;
-  right: -50px;
+  right: 0px;
   height: 75px;
 } 
 
@@ -92,3 +92,14 @@ h4:last-child{
   width: 25px;
 }
 
+@media screen and (min-width: 880px) {
+  .parallax-container {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .parallax-container {
+    height: 600px;
+  }
+}
