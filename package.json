@@ -1,6 +1,6 @@
 {
   "name": "food-mood",
-  "homepage": "https://Trejon.github.io/Food-Mood-Frontend",
+  "homepage": "https://Trejon.github.io/Food-Mood-Frontend/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,8 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+   "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,9 +50,5 @@
       "last 1 iOS version",
       "last 1 ios_saf version"
     ]
-  },
-  "devDependencies": {
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
   }
 }
