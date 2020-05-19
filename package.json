@@ -1,5 +1,6 @@
 {
   "name": "food-mood",
+  "homepage": "https://Trejon.github.io/Food-Mood-Frontend/index",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +11,7 @@
     "cors": "^2.8.5",
     "date-fns": "^2.14.0",
     "dotenv": "^8.2.0",
+    "gh-pages": "^2.2.0",
     "google-map-react": "^1.1.7",
     "history": "^4.10.1",
     "react": "^16.13.1",
@@ -29,7 +31,9 @@
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
