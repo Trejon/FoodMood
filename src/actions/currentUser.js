@@ -33,7 +33,6 @@ export const getUserCoords = () => {
     }
   }
 
-
 export const login = credentials => {
   return dispatch => {
     return fetch("https://thawing-gorge-41253.herokuapp.com/api/v1/login", {
