@@ -186,3 +186,6 @@ console.log(sortedArray); prints [2,3,5,6,7,9]
 
 // "start": "serve -s build",
     "build": "react-scripts build",
+
+
+"start": "serve -s build",

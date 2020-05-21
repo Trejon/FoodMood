@@ -40,16 +40,23 @@ class MyLists extends React.Component{
        </div>
       </div>)) : <h2>Create lists to start adding restaurants and recipes!</h2>
 
-
   return(
     <div>
-    <h3>These are your lists:</h3>
-    <div className="ui list">
-      {listCards}
+      <div className="ui one column grid">
+        <div className="column">
+          <div className="ui fluid card">
+            <div className="content">
+              <h3>These are your lists:</h3>
+              <br/>
+              <div className="ui list">
+                {listCards}
+              </div>
+                <Link className="ui button primary" to='/lists/new'>Create New List</Link>
+            </div> 
+          </div>
+        </div>  
       </div>
-      <Link className="ui button primary" to='/lists/new'>Create New List</Link>
-    </div> 
-    
+    </div>  
    )
   }
 }

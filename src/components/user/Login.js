@@ -34,7 +34,7 @@ class AuthForm extends React.Component {
                 </div>
                 <div className="field">
                   <label>Password:</label>
-                  <input type="password" placeholder="password" value={this.state.password} name="password" onChange={this.handleOnChange}/>
+                  <input type="password" placeholder="Password" value={this.state.password} name="password" onChange={this.handleOnChange}/>
                 </div>
                 <button type="submit" className="ui button primary">Submit</button>
               </form>
