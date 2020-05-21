@@ -16,6 +16,7 @@ body {
 .logo {
   color: rgba(250, 239, 135, 0.967);
   font-size: 30px;
+  position: relative;
 }
 
 .item.loggedin {
@@ -68,11 +69,6 @@ h4:last-child{
 
 .active h4:last-child{
   color: black;
-}
-
-.logo {
-  position: fixed;
-  
 }
 
 .cluster-marker {
