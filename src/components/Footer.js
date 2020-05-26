@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 var style = {
   backgroundColor: "#F8F8F8",
   borderTop: "1px solid #E7E7E7",
@@ -17,15 +20,15 @@ height: '60px',
 width: '100%',
 }
 
-function Footer({ children }) {
+const Footer = ({ children }) => {
   return (
       <div>
           <div style={phantom} />
           <div style={style}>
-           {'&copy; by Trejon Stallsworth. Powered by <a rel="noopener" href="https://forkify-api.herokuapp.com/api/" target="_blank" class="link">Forkify API</a> & <a rel="noopener" href="https://www.yelp.com/developers/documentation/v3/business_search" target="_blank" class="link">Yelp Businesses Search API</a>'}
+           &copy; by Trejon Stallsworth. Powered by <a rel="noopener" href="https://forkify-api.herokuapp.com/api/" target="_blank" class="link">Forkify API</a> & <a rel="noopener" href="https://www.yelp.com/developers/documentation/v3/business_search" target="_blank" class="link">Yelp Businesses Search API</a>
           </div>
       </div>
   )
 }
 
-export default Footer
+export default Footer;
