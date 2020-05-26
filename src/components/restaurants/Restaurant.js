@@ -4,6 +4,25 @@ import { connect } from 'react-redux';
 import { Dropdown } from 'semantic-ui-react'
 
 
+
+const limitRestaurantTitle = (title, limit = 17) => {
+  const newTitle = [];
+  if (title.length > limit) {
+      title.split(' ').reduce((acc, cur) => {
+          if (acc + cur.length <= limit) {
+              newTitle.push(cur);
+          }
+          return acc + cur.length;
+      }, 0);
+
+      // return the result
+      return `${newTitle.join(' ')} ...`;
+  }
+  return title;
+}
+
+
+
 const Restaurant = (props) => {
 
   let restaurants = props.restaurants.map(restaurant => 
@@ -14,7 +33,7 @@ const Restaurant = (props) => {
         </div>
 
         <div className="content">
-          <a className="header" href={restaurant.url} target="_blank" rel="noopener noreferrer"><h3>{restaurant.name}</h3></a>
+          <a className="header" href={restaurant.url} target="_blank" rel="noopener noreferrer"><h3>{limitRestaurantTitle(restaurant.name)}</h3></a>
           <div className="description">
             <h5>Phone Number: {restaurant.display_phone}</h5>
             <h5>Address: {restaurant.location.address1} {restaurant.location.city} {restaurant.location.state} {restaurant.location.zip_code}</h5>
