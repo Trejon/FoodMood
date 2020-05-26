@@ -20,6 +20,7 @@ import EditMealFormWrapper from './components/meals/EditMealFormWrapper';
 import GoogleMaps from './apis/GoogleMaps';
 import ListDelete from './components/lists/ListDelete'
 import MealDelete from './components/meals/MealDelete'
+import Footer from './components/Footer'
 
 
 class App extends React.Component {
@@ -74,6 +75,7 @@ class App extends React.Component {
                 return <MealDelete meal={meal} />
               }} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     )

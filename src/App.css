@@ -2,11 +2,6 @@ body {
   background: url("./foodMood.jpeg") no-repeat fixed center;
 }
 
-.root {
-  position: relative;
-  min-height: 100%;
-}
-
 .ui.item.logout {
   font-size: 10px;
   position: absolute;
