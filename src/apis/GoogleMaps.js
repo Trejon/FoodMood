@@ -32,7 +32,7 @@ class GoogleMaps extends React.Component {
           <button className="restaurant-marker">
             <img
               style={{ height: "50px", width: "50px" }}
-              src="/img/pin.png"
+              src="../img/pin.png"
               alt="Food-Mood"
             />
             <div className="marker-text">
