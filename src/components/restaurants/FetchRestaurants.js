@@ -1,72 +1,76 @@
-import React from 'react'; 
-import SearchBar from './SearchBar';
+import React from "react";
+import SearchBar from "./SearchBar";
 // import { requestOptions } from '../../apis/config'
-import { connect } from 'react-redux';
-import Restaurant from './Restaurant';
-import GoogleMaps from '../../apis/GoogleMaps';
-import dotenv from 'dotenv';
+import { connect } from "react-redux";
+import Restaurant from "./Restaurant";
+import GoogleMaps from "../../apis/GoogleMaps";
 
 const myHeaders = new Headers();
 myHeaders.append("Authorization", process.env.REACT_APP_MY_HEADER_AUTH);
 myHeaders.append("Cookie", process.env.REACT_APP_MY_HEADER_COOKIE);
 
 const requestOptions = {
-  method: 'GET',
+  method: "GET",
   headers: myHeaders,
-  redirect: 'follow'
+  redirect: "follow",
 };
 
-class FetchRestaurants extends React.Component{
+class FetchRestaurants extends React.Component {
   constructor() {
-    super()
- 
+    super();
+
     this.state = {
-      restaurants: [], 
-    }
+      restaurants: [],
+    };
   }
 
   fetchYelpApi = (term) => {
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&latitude=${this.props.location.location.latitude}&longitude=${this.props.location.location.longitude}`, requestOptions)
-    .then(response => response.json())
-    .then(result => {
-      this.setState({
-        restaurants: result.businesses
+    fetch(
+      `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&latitude=${this.props.location.location.latitude}&longitude=${this.props.location.location.longitude}`,
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result) => {
+        this.setState({
+          restaurants: result.businesses,
+        });
       })
-    })
-    .catch(error => console.log('error', error));
-  }
+      .catch((error) => console.log("error", error));
+  };
 
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
-      this.fetchYelpApi()
+      this.fetchYelpApi();
     }
   }
 
   render() {
-    if(!this.state.restaurants) {
-      return(
+    if (!this.state.restaurants) {
+      return (
         <div>
           <h5>Search Restaurants Near You</h5>
-          <SearchBar search={this.fetchYelpApi} /><br/>
+          <SearchBar search={this.fetchYelpApi} />
+          <br />
           <GoogleMaps restaurants={this.state.restaurants} />
         </div>
-      )
-    } 
-    return(
+      );
+    }
+    return (
       <div>
         <h5>Search Restaurants Near You</h5>
         <SearchBar search={this.fetchYelpApi} />
-        <Restaurant restaurants={this.state.restaurants} /><br/>
+        <Restaurant restaurants={this.state.restaurants} />
+        <br />
         <GoogleMaps restaurants={this.state.restaurants} />
       </div>
-    )
+    );
   }
 }
 
-const mapStateToProps = state => {
-  return { 
-    location: state.location
-  }
-}
+const mapStateToProps = (state) => {
+  return {
+    location: state.location,
+  };
+};
 
 export default connect(mapStateToProps)(FetchRestaurants);

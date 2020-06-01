@@ -1,15 +1,15 @@
 <!-- Login -----------------
-// import React from 'react'; 
+// import React from 'react';
 // import { connect } from 'react-redux';
 // import { updateLoginForm } from '../../actions/loginForm';
 // import { login } from '../../actions/currentUser';
 
 // const Login = ({ loginFormData, updateLoginForm, login }) => {
- 
+
 //   const handleChange = event => {
 //     const { name, value } = event.target
-//     const updatedFormInfo = { 
-//       ...loginFormData, 
+//     const updatedFormInfo = {
+//       ...loginFormData,
 //       [name]: value
 //     }
 //     updateLoginForm(updatedFormInfo)
@@ -63,13 +63,13 @@
 
 
 
-<!-- 
+<!--
 const Header = ({ currentUser }) => {
   if (!currentUser) {
     return <Login />
   } else {
   return(
-    <div className="ui secondary pointing menu"> 
+    <div className="ui secondary pointing menu">
       <Link to="/" className="item">
         Home
       </Link>
@@ -77,7 +77,7 @@ const Header = ({ currentUser }) => {
         Lists
       </Link>
       <div className="">
-       <strong>Welcome, {currentUser.currentUser.data.attributes.name}</strong> 
+       <strong>Welcome, {currentUser.currentUser.data.attributes.name}</strong>
       </div>
       <div className="right menu">
         <Logout />
@@ -87,37 +87,23 @@ const Header = ({ currentUser }) => {
   }
 } -->
 
-
-
-
-
-
-
-
-
-
-
-
-
 ----------HEADER-----------------
 return (
-    <div className="ui pointer menu">
-      { currentUser ? <strong>Welcome, {currentUser.currentUser.data.attributes.name}</strong> : ""}
-      {/* { currentUser ? <Logout/> : <Login/> } */}
-      { currentUser ? <Logout /> : 
-        <div>
-          <h1><Link to='/login'>Login</Link> or <Link to='/signup'>Signup</Link></h1>
-        </div>
-      }
-    </div>
-  )
+<div className="ui pointer menu">
+{ currentUser ? <strong>Welcome, {currentUser.currentUser.data.attributes.name}</strong> : ""}
+{/_ { currentUser ? <Logout/> : <Login/> } _/}
+{ currentUser ? <Logout /> :
+<div>
+<h1><Link to='/login'>Login</Link> or <Link to='/signup'>Signup</Link></h1>
+</div>
+}
+</div>
+)
 
-
-
-  ----------------------QuickSort---------------------------
-   function selectionSort(arr) {
-   for (let i = 0; i < arr.length; i++) {
-     let indexOfMin = i;
+----------------------QuickSort---------------------------
+function selectionSort(arr) {
+for (let i = 0; i < arr.length; i++) {
+let indexOfMin = i;
 
      for (let j = i+1; j < arr.length; j++) {
        if(arr[j] < arr[indexOfMin]) {
@@ -130,62 +116,60 @@ return (
        arr[indexOfMin] = arr[i];
        arr[i] =lesser;
      }
-   }
-   return arr;
- }
 
- let array1 = [1,2,3,4,5,6,7,8,9,10]
- let array2 = [304, 530, 100, 23, 1234, 500, 494, 903]
+}
+return arr;
+}
 
+let array1 = [1,2,3,4,5,6,7,8,9,10]
+let array2 = [304, 530, 100, 23, 1234, 500, 494, 903]
 
- selectionSort(array2)
+selectionSort(array2)
 
 var items = [5,3,7,6,2,9];
 function swap(items, leftIndex, rightIndex){
-    var temp = items[leftIndex];
-    items[leftIndex] = items[rightIndex];
-    items[rightIndex] = temp;
+var temp = items[leftIndex];
+items[leftIndex] = items[rightIndex];
+items[rightIndex] = temp;
 }
 function partition(items, left, right) {
-    var pivot   = items[Math.floor((right + left) / 2)], middle element
-        i       = left, left pointer
-        j       = right; right pointer
-    while (i <= j) {
-        while (items[i] < pivot) {
-            i++;
-        }
-        while (items[j] > pivot) {
-            j--;
-        }
-        if (i <= j) {
-            swap(items, i, j); sawpping two elements
-            i++;
-            j--;
-        }
-    }
-    return i;
+var pivot = items[Math.floor((right + left) / 2)], middle element
+i = left, left pointer
+j = right; right pointer
+while (i <= j) {
+while (items[i] < pivot) {
+i++;
+}
+while (items[j] > pivot) {
+j--;
+}
+if (i <= j) {
+swap(items, i, j); sawpping two elements
+i++;
+j--;
+}
+}
+return i;
 }
 
 function quickSort(items, left, right) {
-    var index;
-    if (items.length > 1) {
-        index = partition(items, left, right); index returned from partition
-        if (left < index - 1) { more elements on the left side of the pivot
-            quickSort(items, left, index - 1);
-        }
-        if (index < right) { more elements on the right side of the pivot
-            quickSort(items, index, right);
-        }
-    }
-    return items;
+var index;
+if (items.length > 1) {
+index = partition(items, left, right); index returned from partition
+if (left < index - 1) { more elements on the left side of the pivot
+quickSort(items, left, index - 1);
 }
- first call to quick sort
+if (index < right) { more elements on the right side of the pivot
+quickSort(items, index, right);
+}
+}
+return items;
+}
+first call to quick sort
 var sortedArray = quickSort(items, 0, items.length - 1);
 console.log(sortedArray); prints [2,3,5,6,7,9]
 
-
 // "start": "serve -s build",
-    "build": "react-scripts build",
-
+"build": "react-scripts build",
 
 "start": "serve -s build",
