@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FoodMood/static/css/main.f2775429.chunk.css",
-    "main.js": "/FoodMood/static/js/main.7728b999.chunk.js",
-    "main.js.map": "/FoodMood/static/js/main.7728b999.chunk.js.map",
+    "main.js": "/FoodMood/static/js/main.7533cd12.chunk.js",
+    "main.js.map": "/FoodMood/static/js/main.7533cd12.chunk.js.map",
     "runtime-main.js": "/FoodMood/static/js/runtime-main.cb409b9f.js",
     "runtime-main.js.map": "/FoodMood/static/js/runtime-main.cb409b9f.js.map",
     "static/js/2.fba8639c.chunk.js": "/FoodMood/static/js/2.fba8639c.chunk.js",
     "static/js/2.fba8639c.chunk.js.map": "/FoodMood/static/js/2.fba8639c.chunk.js.map",
     "index.html": "/FoodMood/index.html",
-    "precache-manifest.c6c96ffbd50a33952308cc5658b164e6.js": "/FoodMood/precache-manifest.c6c96ffbd50a33952308cc5658b164e6.js",
+    "precache-manifest.465daeb8fc5bf8bdbc8711d0972a50d0.js": "/FoodMood/precache-manifest.465daeb8fc5bf8bdbc8711d0972a50d0.js",
     "service-worker.js": "/FoodMood/service-worker.js",
     "static/css/main.f2775429.chunk.css.map": "/FoodMood/static/css/main.f2775429.chunk.css.map",
     "static/js/2.fba8639c.chunk.js.LICENSE.txt": "/FoodMood/static/js/2.fba8639c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.cb409b9f.js",
     "static/js/2.fba8639c.chunk.js",
     "static/css/main.f2775429.chunk.css",
-    "static/js/main.7728b999.chunk.js"
+    "static/js/main.7533cd12.chunk.js"
   ]
 }
