@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e5d4e57769989f6c2bf94f4c2eaacffe",
+    "revision": "09aa2da0f6b56e07122643ea1fe15a71",
     "url": "/FoodMood/index.html"
   },
   {
-    "revision": "3e0a2a21df8e2e884ed6",
+    "revision": "6ffc7da36f9c2356c515",
     "url": "/FoodMood/static/css/main.f2775429.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FoodMood/static/js/2.fba8639c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3e0a2a21df8e2e884ed6",
-    "url": "/FoodMood/static/js/main.4c116824.chunk.js"
+    "revision": "6ffc7da36f9c2356c515",
+    "url": "/FoodMood/static/js/main.baf7cdca.chunk.js"
   },
   {
     "revision": "5d2a6ecde19dcecf8229",
