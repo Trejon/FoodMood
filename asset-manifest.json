@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Food-Mood-Frontend/static/css/main.716aad17.chunk.css",
-    "main.js": "/Food-Mood-Frontend/static/js/main.9850e090.chunk.js",
-    "main.js.map": "/Food-Mood-Frontend/static/js/main.9850e090.chunk.js.map",
-    "runtime-main.js": "/Food-Mood-Frontend/static/js/runtime-main.8aeb13c4.js",
-    "runtime-main.js.map": "/Food-Mood-Frontend/static/js/runtime-main.8aeb13c4.js.map",
-    "static/js/2.66cfff6e.chunk.js": "/Food-Mood-Frontend/static/js/2.66cfff6e.chunk.js",
-    "static/js/2.66cfff6e.chunk.js.map": "/Food-Mood-Frontend/static/js/2.66cfff6e.chunk.js.map",
+    "main.css": "/Food-Mood-Frontend/static/css/main.c4c85141.chunk.css",
+    "main.js": "/Food-Mood-Frontend/static/js/main.8ea09f09.chunk.js",
+    "main.js.map": "/Food-Mood-Frontend/static/js/main.8ea09f09.chunk.js.map",
+    "runtime-main.js": "/Food-Mood-Frontend/static/js/runtime-main.9cf2b91e.js",
+    "runtime-main.js.map": "/Food-Mood-Frontend/static/js/runtime-main.9cf2b91e.js.map",
+    "static/js/2.fba8639c.chunk.js": "/Food-Mood-Frontend/static/js/2.fba8639c.chunk.js",
+    "static/js/2.fba8639c.chunk.js.map": "/Food-Mood-Frontend/static/js/2.fba8639c.chunk.js.map",
     "index.html": "/Food-Mood-Frontend/index.html",
-    "precache-manifest.2f0ec404510b0c9973c1b56171ee8a84.js": "/Food-Mood-Frontend/precache-manifest.2f0ec404510b0c9973c1b56171ee8a84.js",
+    "precache-manifest.6707558ee7278f6d33f5f1bf8bacde57.js": "/Food-Mood-Frontend/precache-manifest.6707558ee7278f6d33f5f1bf8bacde57.js",
     "service-worker.js": "/Food-Mood-Frontend/service-worker.js",
-    "static/css/main.716aad17.chunk.css.map": "/Food-Mood-Frontend/static/css/main.716aad17.chunk.css.map",
-    "static/js/2.66cfff6e.chunk.js.LICENSE.txt": "/Food-Mood-Frontend/static/js/2.66cfff6e.chunk.js.LICENSE.txt"
+    "static/css/main.c4c85141.chunk.css.map": "/Food-Mood-Frontend/static/css/main.c4c85141.chunk.css.map",
+    "static/js/2.fba8639c.chunk.js.LICENSE.txt": "/Food-Mood-Frontend/static/js/2.fba8639c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Food-Mood-Frontend/static/media/foodMood.1e1174c9.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8aeb13c4.js",
-    "static/js/2.66cfff6e.chunk.js",
-    "static/css/main.716aad17.chunk.css",
-    "static/js/main.9850e090.chunk.js"
+    "static/js/runtime-main.9cf2b91e.js",
+    "static/js/2.fba8639c.chunk.js",
+    "static/css/main.c4c85141.chunk.css",
+    "static/js/main.8ea09f09.chunk.js"
   ]
 }
