@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/FoodMood/static/css/main.f2775429.chunk.css",
-    "main.js": "/FoodMood/static/js/main.89281d7d.chunk.js",
-    "main.js.map": "/FoodMood/static/js/main.89281d7d.chunk.js.map",
+    "main.js": "/FoodMood/static/js/main.f6d9bd9f.chunk.js",
+    "main.js.map": "/FoodMood/static/js/main.f6d9bd9f.chunk.js.map",
     "runtime-main.js": "/FoodMood/static/js/runtime-main.cb409b9f.js",
     "runtime-main.js.map": "/FoodMood/static/js/runtime-main.cb409b9f.js.map",
-    "static/js/2.fba8639c.chunk.js": "/FoodMood/static/js/2.fba8639c.chunk.js",
-    "static/js/2.fba8639c.chunk.js.map": "/FoodMood/static/js/2.fba8639c.chunk.js.map",
+    "static/js/2.23bf2e5c.chunk.js": "/FoodMood/static/js/2.23bf2e5c.chunk.js",
+    "static/js/2.23bf2e5c.chunk.js.map": "/FoodMood/static/js/2.23bf2e5c.chunk.js.map",
     "index.html": "/FoodMood/index.html",
-    "precache-manifest.7c7c5bdbc1fa455f5c79b36b8cefd4d3.js": "/FoodMood/precache-manifest.7c7c5bdbc1fa455f5c79b36b8cefd4d3.js",
+    "precache-manifest.bbb6124c5f056495eeb0be366945186e.js": "/FoodMood/precache-manifest.bbb6124c5f056495eeb0be366945186e.js",
     "service-worker.js": "/FoodMood/service-worker.js",
     "static/css/main.f2775429.chunk.css.map": "/FoodMood/static/css/main.f2775429.chunk.css.map",
-    "static/js/2.fba8639c.chunk.js.LICENSE.txt": "/FoodMood/static/js/2.fba8639c.chunk.js.LICENSE.txt",
+    "static/js/2.23bf2e5c.chunk.js.LICENSE.txt": "/FoodMood/static/js/2.23bf2e5c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/FoodMood/static/media/foodMood.1e1174c9.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.cb409b9f.js",
-    "static/js/2.fba8639c.chunk.js",
+    "static/js/2.23bf2e5c.chunk.js",
     "static/css/main.f2775429.chunk.css",
-    "static/js/main.89281d7d.chunk.js"
+    "static/js/main.f6d9bd9f.chunk.js"
   ]
 }
