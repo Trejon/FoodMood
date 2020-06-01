@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Food-Mood-Frontend/static/css/main.c4c85141.chunk.css",
-    "main.js": "/Food-Mood-Frontend/static/js/main.8ea09f09.chunk.js",
-    "main.js.map": "/Food-Mood-Frontend/static/js/main.8ea09f09.chunk.js.map",
-    "runtime-main.js": "/Food-Mood-Frontend/static/js/runtime-main.9cf2b91e.js",
-    "runtime-main.js.map": "/Food-Mood-Frontend/static/js/runtime-main.9cf2b91e.js.map",
-    "static/js/2.fba8639c.chunk.js": "/Food-Mood-Frontend/static/js/2.fba8639c.chunk.js",
-    "static/js/2.fba8639c.chunk.js.map": "/Food-Mood-Frontend/static/js/2.fba8639c.chunk.js.map",
-    "index.html": "/Food-Mood-Frontend/index.html",
-    "precache-manifest.6707558ee7278f6d33f5f1bf8bacde57.js": "/Food-Mood-Frontend/precache-manifest.6707558ee7278f6d33f5f1bf8bacde57.js",
-    "service-worker.js": "/Food-Mood-Frontend/service-worker.js",
-    "static/css/main.c4c85141.chunk.css.map": "/Food-Mood-Frontend/static/css/main.c4c85141.chunk.css.map",
-    "static/js/2.fba8639c.chunk.js.LICENSE.txt": "/Food-Mood-Frontend/static/js/2.fba8639c.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Food-Mood-Frontend/static/media/foodMood.1e1174c9.jpeg"
+    "main.css": "/FoodMood/static/css/main.f2775429.chunk.css",
+    "main.js": "/FoodMood/static/js/main.4c116824.chunk.js",
+    "main.js.map": "/FoodMood/static/js/main.4c116824.chunk.js.map",
+    "runtime-main.js": "/FoodMood/static/js/runtime-main.cb409b9f.js",
+    "runtime-main.js.map": "/FoodMood/static/js/runtime-main.cb409b9f.js.map",
+    "static/js/2.fba8639c.chunk.js": "/FoodMood/static/js/2.fba8639c.chunk.js",
+    "static/js/2.fba8639c.chunk.js.map": "/FoodMood/static/js/2.fba8639c.chunk.js.map",
+    "index.html": "/FoodMood/index.html",
+    "precache-manifest.d5027fba7c4e45d2a2359c487295a346.js": "/FoodMood/precache-manifest.d5027fba7c4e45d2a2359c487295a346.js",
+    "service-worker.js": "/FoodMood/service-worker.js",
+    "static/css/main.f2775429.chunk.css.map": "/FoodMood/static/css/main.f2775429.chunk.css.map",
+    "static/js/2.fba8639c.chunk.js.LICENSE.txt": "/FoodMood/static/js/2.fba8639c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/FoodMood/static/media/foodMood.1e1174c9.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9cf2b91e.js",
+    "static/js/runtime-main.cb409b9f.js",
     "static/js/2.fba8639c.chunk.js",
-    "static/css/main.c4c85141.chunk.css",
-    "static/js/main.8ea09f09.chunk.js"
+    "static/css/main.f2775429.chunk.css",
+    "static/js/main.4c116824.chunk.js"
   ]
 }
