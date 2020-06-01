@@ -1,7 +1,7 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
-// import { mapsKey } from './config';
 import { connect } from "react-redux";
+import pin from "./pin.png";
 
 class GoogleMaps extends React.Component {
   handleApiLoaded = (map, maps) => {
@@ -32,7 +32,7 @@ class GoogleMaps extends React.Component {
           <button className="restaurant-marker">
             <img
               style={{ height: "50px", width: "50px" }}
-              src="../img/pin.png"
+              src={pin}
               alt="Food-Mood"
             />
             <div className="marker-text">
@@ -63,7 +63,7 @@ class GoogleMaps extends React.Component {
                 name={restaurant.name}
               >
                 <button className="restaurant-marker">
-                  <img src="/img/pin.png" alt="Food-Mood" />
+                  <img src={pin} alt="Food-Mood" />
                 </button>
               </Marker>
             ))}

@@ -23,7 +23,7 @@ class ListCard extends Component {
     const meals =
       list && this.props.myMeals
         ? this.props.myMeals.filter(
-            (meal) => meal.attributes.list.id == this.props.listId
+            (meal) => meal.attributes.list.id === parseInt(this.props.listId)
           )
         : null;
 
