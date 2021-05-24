@@ -13,6 +13,7 @@ class FetchRestaurants extends React.Component {
     };
   }
 
+  //new method
   fetchYelpApi = (term) => {
     const data = {
       term: term,
