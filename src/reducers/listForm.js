@@ -3,7 +3,7 @@ let initalState = {
   description: "",
 };
 
-export default (state = initalState, action) => {
+const listFormReducer = (state = initalState, action) => {
   switch (action.type) {
     case "UPDATE_LIST_FORM":
       const returnVal = {
@@ -19,3 +19,5 @@ export default (state = initalState, action) => {
       return state;
   }
 };
+
+export default listFormReducer;

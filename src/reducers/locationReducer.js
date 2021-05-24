@@ -1,4 +1,4 @@
-export default (state = null, action) => {
+const locationReducer = (state = null, action) => {
   switch (action.type) {
     case "GET_USER_LOCATION":
       return {
@@ -9,3 +9,5 @@ export default (state = null, action) => {
       return state;
   }
 };
+
+export default locationReducer;

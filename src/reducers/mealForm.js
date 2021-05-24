@@ -7,7 +7,7 @@ let initalState = {
   meal_date: "",
 };
 
-export default (state = initalState, action) => {
+const mealFormReducer = (state = initalState, action) => {
   switch (action.type) {
     case "UPDATE_MEAL_FORM":
       const returnVal = {
@@ -23,3 +23,5 @@ export default (state = initalState, action) => {
       return state;
   }
 };
+
+export default mealFormReducer;

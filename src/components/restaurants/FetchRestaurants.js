@@ -4,17 +4,6 @@ import SearchBar from "./SearchBar";
 import { connect } from "react-redux";
 import Restaurant from "./Restaurant";
 import GoogleMaps from "../../apis/GoogleMaps";
-
-const myHeaders = new Headers();
-myHeaders.append("Authorization", process.env.REACT_APP_MY_HEADER_AUTH);
-myHeaders.append("Cookie", process.env.REACT_APP_MY_HEADER_COOKIE);
-
-const requestOptions = {
-  method: "GET",
-  headers: myHeaders,
-  redirect: "follow",
-};
-
 class FetchRestaurants extends React.Component {
   constructor() {
     super();
@@ -25,17 +14,27 @@ class FetchRestaurants extends React.Component {
   }
 
   fetchYelpApi = (term) => {
-    fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&latitude=${this.props.location.location.latitude}&longitude=${this.props.location.location.longitude}`,
-      requestOptions
-    )
+    const data = {
+      term: term,
+      latitude: this.props.location.location.latitude,
+      longitude: this.props.location.location.longitude,
+    };
+    fetch("http://localhost:3001/api/v1/search", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
       .then((response) => response.json())
-      .then((result) => {
-        this.setState({
-          restaurants: result.businesses,
-        });
-      })
-      .catch((error) => console.log("error", error));
+      .then(
+        (result) =>
+          this.setState({
+            restaurants: result.businesses,
+          })
+        // .catch((error) => console.log("error", error))
+      );
   };
 
   componentDidUpdate(prevProps) {

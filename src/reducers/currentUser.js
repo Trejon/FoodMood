@@ -1,4 +1,4 @@
-export default (state = null, action) => {
+const currentUserReducer = (state = null, action) => {
   switch (action.type) {
     case "SET_CURRENT_USER":
       return {
@@ -12,3 +12,5 @@ export default (state = null, action) => {
       return state;
   }
 };
+
+export default currentUserReducer;

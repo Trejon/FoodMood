@@ -1,4 +1,4 @@
-export default (state = [], action) => {
+const myListsReducer = (state = [], action) => {
   switch (action.type) {
     case "SET_MY_LISTS":
       return action.lists;
@@ -16,3 +16,5 @@ export default (state = [], action) => {
       return state;
   }
 };
+
+export default myListsReducer;
